@@ -9,7 +9,7 @@
 [![Go Reference][14]][15]
 [![Go Report Card](https://goreportcard.com/badge/github.com/pilinux/gorest)][01]
 [![CodeFactor](https://www.codefactor.io/repository/github/pilinux/gorest/badge)][06]
-[![codebeat badge](https://codebeat.co/badges/3e3573cc-2e9d-48bc-a8c5-4f054bfdfcf7)][03]
+[![codebeat badge](https://codebeat.co/badges/12c01a53-4745-4f90-ad2b-a95c94e4b432)][03]
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)][13]
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)][62]
 
@@ -85,6 +85,12 @@ _Note:_ gorest uses [GORM][21] as its ORM
 - [x] RS256: RSA Signature with SHA-256
 - [x] RS384: RSA Signature with SHA-384
 - [x] RS512: RSA Signature with SHA-512
+
+Procedures to generate HS256, HS384, HS512 keys using openssl:
+
+- HS256: `openssl rand -base64 32`
+- HS384: `openssl rand -base64 48`
+- HS512: `openssl rand -base64 64`
 
 Procedures to generate public-private key pair using openssl:
 
@@ -270,8 +276,8 @@ Released under the [MIT license][13]
 [16]: https://github.com/golang-jwt/jwt
 [17]: https://sentry.io/
 [21]: https://gorm.io
-[41]: https://github.com/piLinux/HowtoCode/blob/master/Golang/1.Intro/Installation.md
-[42]: https://github.com/piLinux/GoREST/issues/7
+[41]: https://github.com/pilinux/HowtoCode/blob/master/Golang/1.Intro/Installation.md
+[42]: https://github.com/pilinux/gorest/issues/7
 [51]: https://github.com/joho/godotenv
 [61]: CONTRIBUTING.md
 [62]: CODE_OF_CONDUCT.md
